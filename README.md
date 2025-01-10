@@ -8,9 +8,9 @@
 
 ### max_eigenvalue_lib.py
 ここで固有値の最適化をしています。
-max_p_eigenvalue_lib 関数で p を MAX_ITER_FOR_EIGENVALUE 回更新しています。
-armijo 関数で p を armijo 条件を使って更新しています。
-ascent_dir 関数で p の上昇方向を計算しています。
+max_p_eigenvalue_lib 関数で 埋め込み p を MAX_ITER_FOR_EIGENVALUE 回更新しています。
+armijo 関数で埋め込み p を armijo 条件を使って上昇方向に更新しています。
+ascent_dir 関数で stiffness matrix L(p) の上昇方向を計算しています。
 
 ### test_max_eigenvalue.py
 この関数を実行して実験をします。グラフなどを初期化したのち、最適化計算関数を呼び出して、最後に結果を描画します。
