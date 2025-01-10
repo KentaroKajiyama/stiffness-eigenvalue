@@ -4,7 +4,7 @@
 ここにグラフや繰り返し回数など各パラメータを書いています。
 
 ### framework.py
-ほとんど、rigidpy の frameworkライブラリそのもので、計算を軽くするために scipy の csr形式の疎行列で framework デフォルトで作るようにしています。
+ほとんど rigidpy の frameworkライブラリそのものです。計算を軽くするためにデフォルトで scipy の csr 形式の疎行列を使って framework を作るようにしています。
 
 ### max_eigenvalue_lib.py
 ここで固有値の最適化をしています。
@@ -25,4 +25,5 @@ poetry という python の仮想環境管理ツールを使っており、そ�
 - poetry を install します。
 - このディレクトリのルートディレクトリで poetry install を実行してライブラリをインストールします。
 - poetry run python test_max_eigenvalue.py で実験を開始できます。
-- pip などを使って実行することも可能です。pyproject.toml に書かれたいライブラリをインストールして python test_max_eigenvalue.py を実行します。
+
+pip などを使って実行することも可能です。pyproject.toml に書かれたライブラリをインストールして python test_max_eigenvalue.py を実行します。
