@@ -4,16 +4,16 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import networkx as nx
 import numpy as np
-from stiffness_eigenvalue.max_eigenvalue_lib import max_p_eigenvalue_lib
-from stiffness_eigenvalue.visualize import plot_eigen_vals_and_alpha, custom_visualize
+from optimize_eigenvalue import max_p_eigenvalue_lib
+from visualize import plot_eigen_vals_and_alpha, custom_visualize
 import rigidpy as rp
 from matplotlib import pyplot as plt
 import concurrent.futures
 from tqdm import tqdm
 from dotenv import load_dotenv
-from stiffness_eigenvalue.framework import framework
+from framework import framework
 
-load_dotenv("stiffness-eigenvalue/config/.env")
+load_dotenv(".env")
 
 # 完全グラフでテスト（ライブラリを用いたもの）（time: 200s~300s）=> Backtrackの更新回数を1回に、libraryを対称行列限定のものにするとと150s~170s程度に改善全体の1/4~1/2程度の時間をArmijo条件の反復に費やしていそう。
 def test_lib():
