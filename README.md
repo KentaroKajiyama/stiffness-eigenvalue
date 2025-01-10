@@ -26,4 +26,8 @@ poetry という python の仮想環境管理ツールを使っており、そ�
 - このディレクトリのルートディレクトリで poetry install を実行してライブラリをインストールします。
 - poetry run python test_max_eigenvalue.py で実験を開始できます。
 
+<<<<<<< HEAD
 pip などを使って実行することも可能です。pyproject.toml に書かれたライブラリをインストールして python test_max_eigenvalue.py を実行します。
+=======
+pip などを使って実行することも可能です。pyproject.toml に書かれたライブラリをインストールして python test_max_eigenvalue.py を実行します。
+>>>>>>> 58798f7a2268445c97cb2cf584466f36d4bc928c
